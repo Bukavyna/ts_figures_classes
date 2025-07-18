@@ -14,9 +14,9 @@ export class Triangle implements Figure {
     public b: number,
     public c: number,
   ) {
-    const sides = [a, b, c].sort((x, y) => y - x);
+    const sides = [this.a, this.b, this.c].sort((x, y) => y - x);
 
-    if (a <= 0 || b <= 0 || c <= 0) {
+    if (this.a <= 0 || this.b <= 0 || this.c <= 0) {
       throw new Error('The sides must be greater than zero');
     }
 
